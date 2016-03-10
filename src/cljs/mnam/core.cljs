@@ -39,8 +39,7 @@
 
 (defn mount-root []
   (get-new-method)
-  (reagent/render [current-page] (.getElementById js/document "app"))
-  )
+  (reagent/render [current-page] (.getElementById js/document "app")))
 
 (defn init! []
   (accountant/configure-navigation!
